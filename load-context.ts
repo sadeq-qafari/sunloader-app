@@ -6,6 +6,7 @@ type GetLoadContextArgs = {
     cloudflare: Omit<PlatformProxy<Env>, "dispose" | "caches" | "cf"> & {
       caches: PlatformProxy<Env>["caches"] | CacheStorage;
       cf: Request["cf"];
+      API_BASE: string
     };
   };
 };

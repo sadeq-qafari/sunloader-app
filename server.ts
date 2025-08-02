@@ -22,9 +22,11 @@ export default {
             ctx: {
               waitUntil: ctx.waitUntil.bind(ctx),
               passThroughOnException: ctx.passThroughOnException.bind(ctx),
+              props:{}
             },
             caches,
             env,
+            API_BASE:"https://sunloader.hozoorban.ir"
           },
         },
       });
